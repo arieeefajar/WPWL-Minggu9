@@ -160,26 +160,8 @@ const DataFetcher = () => {
       )}
 
       {/* Data akan ditampilkan di Acara 2 */}
-      {/* {data && !loading && (
-        <DataList data={data} resourceType={resourceType} loading={loading} />
-      )} */}
       {data && !loading && (
-        <div>
-          <h2>📋 Data List (Acara 2)</h2>
-          <p>Data berhasil di-load! Lihat console untuk detail data.</p>
-          <pre
-            style={{
-              background: "#f8f9fa",
-              padding: "1rem",
-              borderRadius: "8px",
-              overflowX: "auto",
-              fontSize: "0.9rem",
-            }}
-          >
-            {JSON.stringify(data.slice(0, 2), null, 2)}...
-          </pre>
-          <p>Total items: {data.length}</p>
-        </div>
+        <DataList data={data} resourceType={resourceType} loading={loading} />
       )}
 
       {/* Debug Info */}
